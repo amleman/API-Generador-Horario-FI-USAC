@@ -1,3 +1,11 @@
+from flask import Flask, jsonify, request
+import os
+import json
+from flask_cors import CORS
+from generador import get_available_courses as get_ac
+from generador import get_total_credits as get_tc
+from generador import get_course_details
+
 #Usaremos flask
 '''
 Primero tendremos que tener un estado el cual nos diga, que los cursos ya han sido guardados.
@@ -6,13 +14,6 @@ Lo que se subira seran los cursos ya filtrados y eso.
 Al tener los cursos, manualmente se agregara un file que tenga solo el comando, agregados, que retorne un 200, y si no hay 400
 '''
 
-from flask import Flask, jsonify, request
-import os
-import json
-from flask_cors import CORS
-from generador import get_available_courses as get_ac
-from generador import get_total_credits as get_tc
-from generador import get_course_details
 
 app = Flask(__name__)
 CORS(app)
