@@ -16,7 +16,7 @@ Al tener los cursos, manualmente se agregara un file que tenga solo el comando, 
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/horario/*": {"origins": "https://genera-tu-horario-fiusac.netlify.app"}})
 
 def confirmacion():
     ruta_confirmacion = os.path.join(os.path.dirname(__file__), 'datos', 'confirmacion.json')
