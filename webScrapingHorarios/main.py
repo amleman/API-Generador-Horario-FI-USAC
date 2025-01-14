@@ -200,6 +200,3 @@ def main():
 
 def prueba():
     return "exitoso"
-
-if __name__ == "__main__":
-    main()
