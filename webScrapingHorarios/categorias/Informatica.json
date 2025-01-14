@@ -1,0 +1,156 @@
+[
+    {
+        "Nombre de Curso": "0610 INFORMATICA",
+        "Star": "Clase normal",
+        "Seccion": "A",
+        "Modalidad": "PRESENCIAL",
+        "Edificio": "T-3",
+        "Salon": "211",
+        "Inicio": "10:40",
+        "Final": "12:20",
+        "Dias": [
+            null,
+            null,
+            "X",
+            null,
+            null,
+            null,
+            null
+        ],
+        "Catedratico": "RENATO ISAAC RIVERA PEREZ",
+        "Aux": "",
+        "Restricciones": "Sin restricciones"
+    },
+    {
+        "Nombre de Curso": "0610 INFORMATICA",
+        "Star": "Clase normal",
+        "Seccion": "C",
+        "Modalidad": "PRESENCIAL",
+        "Edificio": "T-3",
+        "Salon": "209",
+        "Inicio": "11:30",
+        "Final": "12:20",
+        "Dias": [
+            null,
+            "X",
+            null,
+            null,
+            "X",
+            null,
+            null
+        ],
+        "Catedratico": "RENATO ISAAC RIVERA PEREZ",
+        "Aux": "",
+        "Restricciones": "Sin restricciones"
+    },
+    {
+        "Nombre de Curso": "0610 INFORMATICA",
+        "Star": "Clase normal",
+        "Seccion": "N",
+        "Modalidad": "PRESENCIAL",
+        "Edificio": "T-3",
+        "Salon": "211",
+        "Inicio": "17:20",
+        "Final": "18:10",
+        "Dias": [
+            null,
+            "X",
+            null,
+            "X",
+            null,
+            null,
+            null
+        ],
+        "Catedratico": "RENATO ISAAC RIVERA PEREZ",
+        "Aux": "",
+        "Restricciones": "Sin restricciones"
+    },
+    {
+        "Nombre de Curso": "0667 PROGRAMACION COMERCIAL 1",
+        "Star": "Clase normal",
+        "Seccion": "A",
+        "Modalidad": "HÍBRIDA",
+        "Edificio": "HIBR",
+        "Salon": "VIRTUAL",
+        "Inicio": "07:10",
+        "Final": "08:50",
+        "Dias": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            "X",
+            null
+        ],
+        "Catedratico": "GUIPPSY JEANNIRA MENENDEZ PEREZ",
+        "Aux": "",
+        "Restricciones": "Sin restricciones"
+    },
+    {
+        "Nombre de Curso": "0667 PROGRAMACION COMERCIAL 1",
+        "Star": "Clase normal",
+        "Seccion": "N",
+        "Modalidad": "HÍBRIDA",
+        "Edificio": "HIBR",
+        "Salon": "VIRTUAL",
+        "Inicio": "19:00",
+        "Final": "19:50",
+        "Dias": [
+            "X",
+            null,
+            "X",
+            null,
+            null,
+            null,
+            null
+        ],
+        "Catedratico": "JURGEN ANDONI RAMIREZ RAMÍREZ",
+        "Aux": "",
+        "Restricciones": "Sin restricciones"
+    },
+    {
+        "Nombre de Curso": "0667 PROGRAMACION COMERCIAL 1",
+        "Star": "Clase normal",
+        "Seccion": "P",
+        "Modalidad": "HÍBRIDA",
+        "Edificio": "HIBR",
+        "Salon": "VIRTUAL",
+        "Inicio": "19:00",
+        "Final": "19:50",
+        "Dias": [
+            null,
+            "X",
+            null,
+            "X",
+            null,
+            null,
+            null
+        ],
+        "Catedratico": "HERMAN IGOR VELIZ LINARES",
+        "Aux": "",
+        "Restricciones": "Sin restricciones"
+    },
+    {
+        "Nombre de Curso": "0667 PROGRAMACION COMERCIAL 1",
+        "Star": "Clase normal",
+        "Seccion": "Q",
+        "Modalidad": "PRESENCIAL",
+        "Edificio": "T-3",
+        "Salon": "309",
+        "Inicio": "13:10",
+        "Final": "14:00",
+        "Dias": [
+            null,
+            "X",
+            null,
+            "X",
+            null,
+            null,
+            null
+        ],
+        "Catedratico": "WILLIAM ESTUARDO ESCOBAR ARGUETA",
+        "Aux": "",
+        "Restricciones": "Sin restricciones"
+    }
+]

@@ -1,0 +1,67 @@
+Esto es para obtener los horarios del semestre para luego poder filtrar los datos.
+
+Este script utliza un entorno virtual que hace uso del navegador. Este script es solo para pruba de obtencion de datos.
+
+Los headers de los datos son:
+
+Nombre de Curso, Seccion, Modalidad, Edificio, Salon, Inicio, Final, Dias, Catedratico, Aux, Restricciones.
+
+Datos a obtener:
+
+Al parecer todo esta medito en una sola tabla y dentro cada linea esta compuesta
+por el curso, cada linea tiene el nombre, seccion y otros.
+El ID de la tabla es tblHorarios
+
+dentro de la tabla hay un thead, tabla head y un tbody el cuerpo, que es donde estan
+todos los datos
+
+primero vamos a extraer el nombre de las columnas.
+dentro de este thead estan los th, cada th es un nombre
+para ello utilizare un while para obtener cada thead, tambien utilizare th content
+para obtener el valor
+
+Ya que se puede buscar por clase y tag, utilizaremos estos para obtener de una vez
+los headers sin necesidad de obtener toda la tabla.
+
+find_elements(By.TAG_NAME, 'th')
+
+me deberia de regresar 11 elementos
+
+para obtener el valor se debe de hacer la siguiente funcion
+
+from selenium.webdriver.support.ui import WebDriverWait
+
+def __get__(self, obj, owner):
+        """Gets the text of the specified object"""
+
+        driver = obj.driver
+        WebDriverWait(driver, 100).until(
+            lambda driver: driver.find_element(By.NAME, self.locator))
+        element = driver.find_element(By.NAME, self.locator)
+        return element.get_attribute("value")
+
+Nota: Al parecer, para obtener el texto de ciertos tags, es necesario que estos se puedan visualizar completamente en el html.
+Esto quiere decir, que si en caso la pantalla es muy peque y se necesita hacer click en una opcion para desplegar mas informacion.
+Esa informacion no va a poder ser obtenida a la primera vez.
+
+https://w3c.github.io/webdriver/
+
+
+Ahora que ya tengo los horarios y la ruta de la carrera, debo de crear un usuario el cual tiene que tener los cursos que ya aprovo y los creditos
+Con eso hacer varias rutas de guia para semestre y para vacaciones en base a ciertos criterios.
+Criterios: 
+- estudiar en la mañana o tarde.
+- terminar area comun
+- ruta mas efectiva. 
+- numero de cursos por semestre que puede llevar.
+
+Teniendo en cuenta las necesidades del usuario puedo filtrar los cursos que puede tomar, al momento que el usuario selecciona los cursos que le interesan
+este crea un horario con dias y horas de los cursos seleccionados.
+Se crearan hasta 3 opciones usando las secciones disponibles con horarios distintos.
+
+Idea: en un futuro este programa tambien podra desplegar el programa de los cursos con los temas que se veran y links a guias de estudio y otros.
+
+
+Siguiendo con la creacion de horarios, se usara un algoritmo de ordenamiento topologico usando el algoritmo de khan, usando una cola, para almacenar
+de forma ordenada los cursos.
+
